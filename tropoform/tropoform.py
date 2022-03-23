@@ -4,18 +4,19 @@ Script to manage troposphere templates like terraform
 """
 __version__ = '0.3.8'
 
-import boto3
-from datetime import datetime
-import time
-import yaml
-import logging
-from botocore.exceptions import ClientError
 import os
 import sys
 import argparse
+import colorlog
+import boto3
+import time
+import yaml
+import logging
+from datetime import datetime
+from botocore.exceptions import ClientError
 from boto3 import client
 from typing import Optional, Union
-from colorlog import colorlog
+
 
 # Configure the global logger
 # global logger
